@@ -996,6 +996,7 @@ int searchR(vector<string>& strs,string str,int first,int last){
             return searchR(strs,str,middle + 1,last);
 
     }
+    int a;
     return  0;
 }
 int searchString(vector<string>& strs,string str){
