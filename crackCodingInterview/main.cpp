@@ -36,7 +36,7 @@ struct treeNode{
 
 
 
-//cc150 1.1ÅĞ¶Ï×Ö·û´®ÖĞÊÇ·ñËùÓĞ×Ö·û¶¼²»Ò»Ñù
+//cc150 1.1åˆ¤æ–­å­—ç¬¦ä¸²ä¸­æ˜¯å¦æ‰€æœ‰å­—ç¬¦éƒ½ä¸ä¸€æ ·
 
 bool isUniqueChars(string str){
     bool *char_set = new bool[256]();
@@ -53,7 +53,7 @@ bool isUniqueChars(string str){
     return true;
 }
 
-//cc150 1.2·´×ª×Ö·û´®
+//cc150 1.2åè½¬å­—ç¬¦ä¸²
 void reverse(char* str){
     char* last = str;
     if(!str)
@@ -73,7 +73,7 @@ void reverse(char* str){
     }
     return;
 }
-//cc150 1.3ÅĞ¶ÏÁ½¸ö×Ö·û´®ÊÇ·ñÊÇ±äÎ»´Ê
+//cc150 1.3åˆ¤æ–­ä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦æ˜¯å˜ä½è¯
 
 bool permutation(string str_1,string str_2){
     if(str_1.length() != str_2.length())
@@ -99,7 +99,7 @@ bool permutation(string str_1,string str_2){
 }
 
 
-//cc150 1.4 ÓÃ%20Ìæ»»¿Õ¸ñ
+//cc150 1.4 ç”¨%20æ›¿æ¢ç©ºæ ¼
 void replaceSpace(char* str){
     int spaceCount = 0;
     int len = strlen(str);
@@ -121,7 +121,7 @@ void replaceSpace(char* str){
     }
 }
 
-//cc150 1.5 Ñ¹Ëõ×Ö·û´®
+//cc150 1.5 å‹ç¼©å­—ç¬¦ä¸²
 
 string compressBad(string str){
     int len = str.length();
@@ -152,7 +152,7 @@ string compressBad(string str){
 
 
 
-//cc150 1.7 ½«0ÔªËØµÄĞĞºÍÁĞ¶¼ÇåÁã
+//cc150 1.7 å°†0å…ƒç´ çš„è¡Œå’Œåˆ—éƒ½æ¸…é›¶
 
 void setZeros(int** matrix,int row,int column){
     bool *rowsHasZero = new bool[row]();
@@ -187,9 +187,9 @@ void setZeros(int** matrix,int row,int column){
     delete [] columnHasZero;
 }
 
-bool isSubstring(string s1, string s2){return true;} //ÅĞ¶Ïs2ÊÇ·ñÊÇs1µÄ×Ó´®£¬¿ÉÒÔÓÃKMPËã·¨»òÕßºó×ºÊ÷½øĞĞÅĞ¶Ï
+bool isSubstring(string s1, string s2){return true;} //åˆ¤æ–­s2æ˜¯å¦æ˜¯s1çš„å­ä¸²ï¼Œå¯ä»¥ç”¨KMPç®—æ³•æˆ–è€…åç¼€æ ‘è¿›è¡Œåˆ¤æ–­
 
-//cc150 1.8 ÓÃisSubstringÅĞ¶ÏS2ÊÇ·ñÊÇs1Ğı×ªºóµÄ×Ö·û´®
+//cc150 1.8 ç”¨isSubstringåˆ¤æ–­S2æ˜¯å¦æ˜¯s1æ—‹è½¬åçš„å­—ç¬¦ä¸²
 bool isRotation(string s1,string s2){
     int len_1 = s1.length();
     int len_2 = s2.length();
@@ -201,8 +201,8 @@ bool isRotation(string s1,string s2){
 }
 
 
-//cc150 2.1 ÒÆ³ıÁ´±íÖĞµÄÖØ¸´½Úµã
-void removeDuplicatedNode(linkNode* head){    //Ê±¼ä¸´ÔÓ¶ÈO(n)¿Õ¼ä¸´ÔÓ¶ÈO(n)
+//cc150 2.1 ç§»é™¤é“¾è¡¨ä¸­çš„é‡å¤èŠ‚ç‚¹
+void removeDuplicatedNode(linkNode* head){    //æ—¶é—´å¤æ‚åº¦O(n)ç©ºé—´å¤æ‚åº¦O(n)
     unordered_map<int,bool> hashMap;
     if(head == NULL) return;
     hashMap[head->val] = true;
@@ -219,7 +219,7 @@ void removeDuplicatedNode(linkNode* head){    //Ê±¼ä¸´ÔÓ¶ÈO(n)¿Õ¼ä¸´ÔÓ¶ÈO(n)
     }
 }
 
-void removeDuplicatedNode_2(linkNode* head){    //Ê±¼ä¸´ÔÓ¶ÈO(n2)¿Õ¼ä¸´ÔÓ¶ÈO(1)
+void removeDuplicatedNode_2(linkNode* head){    //æ—¶é—´å¤æ‚åº¦O(n2)ç©ºé—´å¤æ‚åº¦O(1)
     if(head == NULL){
 
     }
@@ -239,7 +239,7 @@ void removeDuplicatedNode_2(linkNode* head){    //Ê±¼ä¸´ÔÓ¶ÈO(n2)¿Õ¼ä¸´ÔÓ¶ÈO(1)
     }
 }
 
-//cc150 2.2 ÕÒ³öµ¥Á´±íÖĞµ¹ÊıµÚK¸ö½Úµã
+//cc150 2.2 æ‰¾å‡ºå•é“¾è¡¨ä¸­å€’æ•°ç¬¬Kä¸ªèŠ‚ç‚¹
 
 linkNode* nthToLast(linkNode* head,int n){
     if(n <= 0)
@@ -260,7 +260,7 @@ linkNode* nthToLast(linkNode* head,int n){
 
 
 
-//cc150 2.3É¾³ıµ¥ÏòÁ´±íÖĞµÄÄ³¸ö½Úµã£¬¼ÙÉèÖ»ÄÜ·ÃÎÊ¸Ã½Úµã
+//cc150 2.3åˆ é™¤å•å‘é“¾è¡¨ä¸­çš„æŸä¸ªèŠ‚ç‚¹ï¼Œå‡è®¾åªèƒ½è®¿é—®è¯¥èŠ‚ç‚¹
 
 void deleteNode(linkNode* node){
     if(node == NULL || node->next == NULL){
@@ -272,7 +272,7 @@ void deleteNode(linkNode* node){
     delete nodeToDelete;
 }
 
-//cc150 2.4 ÒÔ¸ø¶¨ÖµxÎª»ù×¼£¬½«Á´±íÖĞĞ¡ÓÚxµÄ·ÅÔÚÇ°Ãæ£¬´óÓÚxµÄ·ÅÔÚºóÃæ
+//cc150 2.4 ä»¥ç»™å®šå€¼xä¸ºåŸºå‡†ï¼Œå°†é“¾è¡¨ä¸­å°äºxçš„æ”¾åœ¨å‰é¢ï¼Œå¤§äºxçš„æ”¾åœ¨åé¢
 
 linkNode* partitionLinkList(linkNode* head,int keyVal){
     linkNode* beforeBegin = NULL;
@@ -307,7 +307,7 @@ linkNode* partitionLinkList(linkNode* head,int keyVal){
         walk = nextNode;
     }
 
-    if(beforeBegin == NULL)  //Èç¹ûÈ«²¿¶¼´óÓÚkeyVal
+    if(beforeBegin == NULL)  //å¦‚æœå…¨éƒ¨éƒ½å¤§äºkeyVal
         return afterBegin;
 
     beforeEnd->next = afterBegin;
@@ -317,7 +317,7 @@ linkNode* partitionLinkList(linkNode* head,int keyVal){
 
 
 
-//cc150 2.5 ¸ø¶¨Á½¸öÓÃÁ´±í±êÊ¾µÄÕûÊı£¬ÇóÁ½¸öÕûÊıÖ»ºÍ£¬·Ö±ğ¿¼ÂÇÕıÏò´æ·ÅºÍ·´Ïò´æ·ÅµÄÇé¿ö
+//cc150 2.5 ç»™å®šä¸¤ä¸ªç”¨é“¾è¡¨æ ‡ç¤ºçš„æ•´æ•°ï¼Œæ±‚ä¸¤ä¸ªæ•´æ•°åªå’Œï¼Œåˆ†åˆ«è€ƒè™‘æ­£å‘å­˜æ”¾å’Œåå‘å­˜æ”¾çš„æƒ…å†µ
 
 linkNode* addListCore(linkNode* head_1,linkNode* head_2,int overNum){
     linkNode* result = new linkNode(0);
@@ -335,9 +335,9 @@ linkNode* addLists(linkNode* head_1,linkNode* head_2){
     return NULL;
 }
 
-//µİ¹é¼°¶¯Ì¬¹æ»®
+//é€’å½’åŠåŠ¨æ€è§„åˆ’
 
-//9.1 ÅÀÂ¥Ìİ
+//9.1 çˆ¬æ¥¼æ¢¯
 
 
 int countWaysDP(int n){
@@ -361,7 +361,7 @@ int countWaysDP(int n){
 }
 
 
-//9.3 Ä§ÊõË÷Òı
+//9.3 é­”æœ¯ç´¢å¼•
 
 int magicFast(int a[],int begin, int end){
     if(begin > end)
@@ -399,7 +399,7 @@ int magicFastHasDupVal(int a[],int begin,int end){
     }
 }
 
-#pragma mark - 2.6ÓĞ»·Á´±íµÄÈë¿Ú
+#pragma mark - 2.6æœ‰ç¯é“¾è¡¨çš„å…¥å£
 
 linkList* findBeginning(linkList* head){
     if(head == NULL || head->next == NULL)
@@ -424,7 +424,7 @@ linkList* findBeginning(linkList* head){
 
 
 
-#pragma mark - 2.7Á´±í»ØÎÄ
+#pragma mark - 2.7é“¾è¡¨å›æ–‡
 
 bool isPalindrome(linkList* head){
     stack<linkList*> sk;
@@ -452,21 +452,21 @@ bool isPalindrome(linkList* head){
 
 }
 
-#pragma mark - µÚÈıÕÂ£ºÕ»Óë¶ÓÁĞ
+#pragma mark - ç¬¬ä¸‰ç« ï¼šæ ˆä¸é˜Ÿåˆ—
 
 
-#pragma mark - 3.1 ÓÃÒ»¸öÊı×éÊµÏÖÈı¸öÕ»
+#pragma mark - 3.1 ç”¨ä¸€ä¸ªæ•°ç»„å®ç°ä¸‰ä¸ªæ ˆ
 
-#pragma mark - 3.2 Éè¼ÆÒ»¸öÖ§³Ö min ²Ù×÷µÄÕ»
+#pragma mark - 3.2 è®¾è®¡ä¸€ä¸ªæ”¯æŒ min æ“ä½œçš„æ ˆ
 
-//solution_1 ÔÚÔªËØµÄÊı¾İ½á¹¹ÖĞ¼ÓÈë min ³ÉÔ±£¬ËæÊ±¼ÇÂ¼Ã¿Ò»¸öÕ»ÔªËØµÄµ±Ç°×îĞ¡Öµ£¬µ±ÈëÕ»Ê±¾Í±È½ÏÈëÕ»µÄÖµºÍµ±Ç°×îĞ¡ÖµµÄ¹ØÏµ£¬³öÕ»Ê±Ö±½Ó pop ³öÕ»
-//solution_2 Ê¹ÓÃÁíÍâÒ»¸öÕ»À´´æ´¢ min ÔªËØµÄÖµºÍ¸öÊı£¬¿ÉÒÔ½ÚÊ¡¿Õ¼ä
+//solution_1 åœ¨å…ƒç´ çš„æ•°æ®ç»“æ„ä¸­åŠ å…¥ min æˆå‘˜ï¼Œéšæ—¶è®°å½•æ¯ä¸€ä¸ªæ ˆå…ƒç´ çš„å½“å‰æœ€å°å€¼ï¼Œå½“å…¥æ ˆæ—¶å°±æ¯”è¾ƒå…¥æ ˆçš„å€¼å’Œå½“å‰æœ€å°å€¼çš„å…³ç³»ï¼Œå‡ºæ ˆæ—¶ç›´æ¥ pop å‡ºæ ˆ
+//solution_2 ä½¿ç”¨å¦å¤–ä¸€ä¸ªæ ˆæ¥å­˜å‚¨ min å…ƒç´ çš„å€¼å’Œä¸ªæ•°ï¼Œå¯ä»¥èŠ‚çœç©ºé—´
 
-#pragma mark - 3.3 Éè¼ÆÒ»¸ö¶àÕ»Êı¾İ½á¹¹£¬µ±Ã¿¸öµ¥Õ»ÄÚµÄÔªËØÊıÁ¿¹ı´óÊ±»áĞÂ½¨ÁíÒ»¸öÕ»½øĞĞ´æ´¢£¬µ«ÊÇÆäÓà²Ù×÷ÓëÕ»ÎŞÒì¡£½ø½×£ºÊµÏÖÒ»¸ö popAt(int Index)·½·¨£¬¸ù¾İÖ¸¶¨µÄ×ÓÕ»£¬½øĞĞ pop ²Ù×÷
+#pragma mark - 3.3 è®¾è®¡ä¸€ä¸ªå¤šæ ˆæ•°æ®ç»“æ„ï¼Œå½“æ¯ä¸ªå•æ ˆå†…çš„å…ƒç´ æ•°é‡è¿‡å¤§æ—¶ä¼šæ–°å»ºå¦ä¸€ä¸ªæ ˆè¿›è¡Œå­˜å‚¨ï¼Œä½†æ˜¯å…¶ä½™æ“ä½œä¸æ ˆæ— å¼‚ã€‚è¿›é˜¶ï¼šå®ç°ä¸€ä¸ª popAt(int Index)æ–¹æ³•ï¼Œæ ¹æ®æŒ‡å®šçš„å­æ ˆï¼Œè¿›è¡Œ pop æ“ä½œ
 
-#pragma mark - 3.4 ººÂŞËşÎÊÌâ
+#pragma mark - 3.4 æ±‰ç½—å¡”é—®é¢˜
 
-int theOtherTowerNum(int tower1,int tower2){   //·µ»ØÁíÍâÒ»¸ö»º³åtower
+int theOtherTowerNum(int tower1,int tower2){   //è¿”å›å¦å¤–ä¸€ä¸ªç¼“å†²tower
     if (tower1 != 1 && tower2 != 1) {
         return 1;
     }
@@ -494,7 +494,7 @@ void hanoi(int fromTowerNum,int toTowerNum,int diskNum){
 
 }
 
-#pragma mark - 3.5 Á½¸öÕ»ÊµÏÖÒ»¸ö¶ÓÁĞ
+#pragma mark - 3.5 ä¸¤ä¸ªæ ˆå®ç°ä¸€ä¸ªé˜Ÿåˆ—
 
 template <typename T>
 class queueWithTwoStack {
@@ -528,7 +528,7 @@ void queueWithTwoStack<T>::pop() {
     }
 }
 
-#pragma mark - 3.6 °´ÕÕÉıĞò¶ÔÕ»½øĞĞÅÅĞò,Ö»ÄÜÓÃÒ»¸öÕ»¸¨Öú
+#pragma mark - 3.6 æŒ‰ç…§å‡åºå¯¹æ ˆè¿›è¡Œæ’åº,åªèƒ½ç”¨ä¸€ä¸ªæ ˆè¾…åŠ©
 
 
 void stackSort(stack<int>& originalStack,stack<int>& sortedStack){
@@ -545,13 +545,13 @@ void stackSort(stack<int>& originalStack,stack<int>& sortedStack){
 }
 
 
-#pragma mark - 3.7 ÊµÏÖÒ»¸öÊı¾İ½á¹¹£¬Ö§³Ö enqueue£¬dequeueAny£¬dequeueDog£¬dequeueCat
+#pragma mark - 3.7 å®ç°ä¸€ä¸ªæ•°æ®ç»“æ„ï¼Œæ”¯æŒ enqueueï¼ŒdequeueAnyï¼ŒdequeueDogï¼ŒdequeueCat
 
 
-#pragma mark - µÚËÄÕÂ£ºÍ¼Óë¶ş²æÊ÷
+#pragma mark - ç¬¬å››ç« ï¼šå›¾ä¸äºŒå‰æ ‘
 
 
-#pragma mark - 4.1 ÅĞ¶ÏÊÇ·ñÊÇÆ½ºâ¶ş²æÊ÷
+#pragma mark - 4.1 åˆ¤æ–­æ˜¯å¦æ˜¯å¹³è¡¡äºŒå‰æ ‘
 
 int isBalanceTreeCore(treeNode* root){
     if (root == NULL) {
@@ -584,7 +584,7 @@ bool isBalanceTree(treeNode* root){
     }
 }
 
-#pragma mark - 4.3 ¸ø¶¨ÓĞĞòÕûÊıÊı×é£¬Éú³É¸ß¶È×îµÍµÄ¶ş²æÊ÷
+#pragma mark - 4.3 ç»™å®šæœ‰åºæ•´æ•°æ•°ç»„ï¼Œç”Ÿæˆé«˜åº¦æœ€ä½çš„äºŒå‰æ ‘
 
 treeNode* createMinimalBSTCore(int arr[],int beginIndex,int endIndex){
     if (endIndex >= beginIndex) {
@@ -604,7 +604,7 @@ treeNode* createMinimalBSTCore(int arr[],int beginIndex,int endIndex){
 treeNode* createMinimalBST(int arr[],int size){
     return createMinimalBSTCore(arr, 0, size - 1);
 }
-#pragma mark - 4.4 ¸ø¶¨Ò»¸ö¶ş²æÊ÷Éú³ÉK ²ã¸öÁ´±í
+#pragma mark - 4.4 ç»™å®šä¸€ä¸ªäºŒå‰æ ‘ç”ŸæˆK å±‚ä¸ªé“¾è¡¨
 
 
 void createLevelLinklistCore(vector<linkList*> vec,treeNode* curRoot,int level){
@@ -633,9 +633,9 @@ vector<linkList*> createLevelLinklist(treeNode* root){
     return result;
 }
 
-#pragma mark - 4.5 ¼ì²é¶ş²æÊ÷ÊÇ·ñÊÇÅÅĞò¶ş²æÊ÷
+#pragma mark - 4.5 æ£€æŸ¥äºŒå‰æ ‘æ˜¯å¦æ˜¯æ’åºäºŒå‰æ ‘
 
-//²¢²»ÊÇµ±Ç°½Úµã´óÓÚ×ó½ÚµãĞ¡ÓÚÓÒ½ÚµãµÄÍ¬Ê±×óÓÒ½Úµã¶¼ÊÇÅÅĞò¶ş²æÊ÷Õû¸ö¶ş²æÊ÷¾ÍÊÇÅÅĞò¶ş²æÊ÷
+//å¹¶ä¸æ˜¯å½“å‰èŠ‚ç‚¹å¤§äºå·¦èŠ‚ç‚¹å°äºå³èŠ‚ç‚¹çš„åŒæ—¶å·¦å³èŠ‚ç‚¹éƒ½æ˜¯æ’åºäºŒå‰æ ‘æ•´ä¸ªäºŒå‰æ ‘å°±æ˜¯æ’åºäºŒå‰æ ‘
 
 
 //bool isBST(treeNode* root){
@@ -690,7 +690,7 @@ bool isBST(treeNode* root){
 }
 
 
-#pragma mark - 4.6ÅÅĞò¶ş²æÊ÷µÄºó¼Ì½Úµã
+#pragma mark - 4.6æ’åºäºŒå‰æ ‘çš„åç»§èŠ‚ç‚¹
 
 treeNode* successorNode(treeNode* node){
 
@@ -714,11 +714,11 @@ treeNode* successorNode(treeNode* node){
 }
 
 
-#pragma mark - 4.7¶ş²æÊ÷×îµÍ¹«¹²×æÏÈ
+#pragma mark - 4.7äºŒå‰æ ‘æœ€ä½å…¬å…±ç¥–å…ˆ
 
-//Èç¹ûÓĞÖ¸Ïò¸¸½ÚµãµÄÖ¸Õë£¬ÔòÎÊÌâ×ª»¯ÎªY ĞÍÁ´±íÇó½»²æ½Úµã
-//Èç¹ûÃ»ÓĞÖ¸Ïò¸¸½ÚµãµÄÖ¸Õë£¬ÓÉÉÏÍùÏÂ£¬Èç¹ûÁ½¸ö½Úµã¶¼ÊÇµ±Ç°½ÚµãµÄ×ó×ÓÊ÷Ôò±éÀú×ó½Úµã£¬¶¼ÊÇµ±Ç°½ÚµãµÄÓÒ×ÓÊ÷Ôò±ãÀûÓÒ½Úµã£¬·ñÔòÎª×îµÍ¹«¹²×æÏÈ
-//¸Ã·½·¨ÔÚÆ½ºâ¶ş²æÊ÷ÉÏÔËĞĞµÄ½¥½ø¸´ÔÓ¶ÈÎª O(n)
+//å¦‚æœæœ‰æŒ‡å‘çˆ¶èŠ‚ç‚¹çš„æŒ‡é’ˆï¼Œåˆ™é—®é¢˜è½¬åŒ–ä¸ºY å‹é“¾è¡¨æ±‚äº¤å‰èŠ‚ç‚¹
+//å¦‚æœæ²¡æœ‰æŒ‡å‘çˆ¶èŠ‚ç‚¹çš„æŒ‡é’ˆï¼Œç”±ä¸Šå¾€ä¸‹ï¼Œå¦‚æœä¸¤ä¸ªèŠ‚ç‚¹éƒ½æ˜¯å½“å‰èŠ‚ç‚¹çš„å·¦å­æ ‘åˆ™éå†å·¦èŠ‚ç‚¹ï¼Œéƒ½æ˜¯å½“å‰èŠ‚ç‚¹çš„å³å­æ ‘åˆ™ä¾¿åˆ©å³èŠ‚ç‚¹ï¼Œå¦åˆ™ä¸ºæœ€ä½å…¬å…±ç¥–å…ˆ
+//è¯¥æ–¹æ³•åœ¨å¹³è¡¡äºŒå‰æ ‘ä¸Šè¿è¡Œçš„æ¸è¿›å¤æ‚åº¦ä¸º O(n)
 
 bool cover(treeNode* root,treeNode* node){
     if (root == NULL) {
@@ -753,11 +753,11 @@ treeNode* lowestAncestorTreeNode(treeNode* root,treeNode* node_1,treeNode* node_
     return NULL;
 }
 
-#pragma mark - 4.8Æ¥ÅäÁ½¸ö¶ş²æÊ÷£¬T1 T2£¬T2ÊÇ·ñÊÇ T1µÄ×ÓÊ÷
+#pragma mark - 4.8åŒ¹é…ä¸¤ä¸ªäºŒå‰æ ‘ï¼ŒT1 T2ï¼ŒT2æ˜¯å¦æ˜¯ T1çš„å­æ ‘
 
-//Solution1 ÕÒ³öÁ½¸öÊ÷µÄÖĞĞòºÍÇ°Ğò±ãÀûĞòÁĞ£¬T2µÄÖĞĞòÇ°ĞòĞòÁĞÊÇ·ñÊÇ T1µÄ×ÓĞòÁĞ¡£Èç¹ûÊÇ£¬ÔòÊÇ×ÓÊ÷(ÅĞ¶Ï×Ó´®¿ÉÒÔÓÃºó×ºÊ÷)  ´ËÖÖ·½·¨µÄ¿Õ¼ä¸´ÔÓ¶È½Ï¸ß£¬O(n)
+//Solution1 æ‰¾å‡ºä¸¤ä¸ªæ ‘çš„ä¸­åºå’Œå‰åºä¾¿åˆ©åºåˆ—ï¼ŒT2çš„ä¸­åºå‰åºåºåˆ—æ˜¯å¦æ˜¯ T1çš„å­åºåˆ—ã€‚å¦‚æœæ˜¯ï¼Œåˆ™æ˜¯å­æ ‘(åˆ¤æ–­å­ä¸²å¯ä»¥ç”¨åç¼€æ ‘)  æ­¤ç§æ–¹æ³•çš„ç©ºé—´å¤æ‚åº¦è¾ƒé«˜ï¼ŒO(n)
 
-//Solution2 ±ãÀû T1£¬ÈôÓöµ½½ÚµãµÈÓÚ T2µÄ¸ù½ÚµãÔò±éÀú¿´ÊÇ·ñÊÇÏàÍ¬µÄÁ½¿ÅÊ÷ ´ËÖÖ·½Ê½µÄ×î»µÊ±¼ä¸´ÔÓ¶È½Ï¸ß£¬¿Õ¼ä¸´ÔÓ¶ÈºÜµÍ
+//Solution2 ä¾¿åˆ© T1ï¼Œè‹¥é‡åˆ°èŠ‚ç‚¹ç­‰äº T2çš„æ ¹èŠ‚ç‚¹åˆ™éå†çœ‹æ˜¯å¦æ˜¯ç›¸åŒçš„ä¸¤é¢—æ ‘ æ­¤ç§æ–¹å¼çš„æœ€åæ—¶é—´å¤æ‚åº¦è¾ƒé«˜ï¼Œç©ºé—´å¤æ‚åº¦å¾ˆä½
 
 bool isSameTree(treeNode* node_1,treeNode* node_2){
     if (node_1 == NULL && node_2 == NULL) {
@@ -797,7 +797,7 @@ bool isSubtree(treeNode* tree_1,treeNode* tree_2){
 }
 
 
-#pragma mark - 4.9¶ş²æÊ÷ÖĞÂ·¾¶ºÍÎªÖ¸¶¨ÖµÎÊÌâ
+#pragma mark - 4.9äºŒå‰æ ‘ä¸­è·¯å¾„å’Œä¸ºæŒ‡å®šå€¼é—®é¢˜
 
 
 void printPath(int path[],int begin,int end){
@@ -838,7 +838,7 @@ void findSum(treeNode* root,int sum){
     delete [] path;
 }
 
-#pragma mark - µÚÎåÕÂ£ºÎ»²Ù×÷
+#pragma mark - ç¬¬äº”ç« ï¼šä½æ“ä½œ
 
 #pragma mark - 5.1
 
@@ -852,7 +852,7 @@ int updateBit(int n,int m,int j,int i){
     return m | n;
 }
 
-#pragma mark - 5.2 ½«¸¡µãĞÍ×ª»¯Îª¶ş½øÖÆĞÎÊ½
+#pragma mark - 5.2 å°†æµ®ç‚¹å‹è½¬åŒ–ä¸ºäºŒè¿›åˆ¶å½¢å¼
 
 string printBinary(double num){
     if (num <= 0 || num >= 1) {
@@ -879,7 +879,7 @@ string printBinary(double num){
     }
 }
 
-#pragma mark - 5.3 ¶ş½øÖÆÖĞ1¸öÊıÏàÍ¬µÄ×îĞ¡²»Ğ¡ÓÚµÄÊı/×î´ó²»´óÓÚµÄÊı
+#pragma mark - 5.3 äºŒè¿›åˆ¶ä¸­1ä¸ªæ•°ç›¸åŒçš„æœ€å°ä¸å°äºçš„æ•°/æœ€å¤§ä¸å¤§äºçš„æ•°
 
 int getNext(int n){
     int index = 1;
@@ -936,7 +936,7 @@ int getPre(int n){
     return -1;
 }
 
-//9.6 ´òÓ¡N¶ÔÀ¨ºÅµÄËùÓĞ×éºÏ
+//9.6 æ‰“å°Nå¯¹æ‹¬å·çš„æ‰€æœ‰ç»„åˆ
 void addParrentnessCore(vector<string>& list,int leftParNum,int rightParNum,int count,char* tempStr);
 vector<string> addParrentness(int n){
     char* temp= new char[n * 2 + 1];
@@ -967,7 +967,7 @@ void addParrentnessCore(vector<string>& list,int leftParNum,int rightParNum,int 
     }
 }
 
-//11.5 ²éÕÒ¸ø¶¨×Ö·û´®µÄÎ»ÖÃ
+//11.5 æŸ¥æ‰¾ç»™å®šå­—ç¬¦ä¸²çš„ä½ç½®
 
 int searchR(vector<string>& strs,string str,int first,int last){
     int middle = first + (last - first) >> 1;
@@ -1074,7 +1074,7 @@ int rotateArrayBinarySearch(int num[],int n,int key){
 }
 
 
-//11.7 ÂíÏ·ÍÅµşÂŞººµÄ¸ß¶È
+//11.7 é©¬æˆå›¢å ç½—æ±‰çš„é«˜åº¦
 
 struct actor{
     int height;
@@ -1167,7 +1167,7 @@ private:
 };
 
 
-//13.8 ÊµÏÖÖÇÄÜÖ¸Õë
+//13.8 å®ç°æ™ºèƒ½æŒ‡é’ˆ
 template<class T> class SmartPointer{
 public:
     SmartPointer(T* ptr){
@@ -1211,7 +1211,7 @@ private:
 };
 
 
-//13.9 Éè¼ÆÒ»¸ömalloc·µ»ØµÄµØÖ·ÎªÒ»¸öÊı(2µÄn´Î·½)µÄÕûÊı±¶
+//13.9 è®¾è®¡ä¸€ä¸ªmallocè¿”å›çš„åœ°å€ä¸ºä¸€ä¸ªæ•°(2çš„næ¬¡æ–¹)çš„æ•´æ•°å€
 
 
 void* aligned_malloc(size_t requiredBytes,size_t alignment){
@@ -1232,7 +1232,7 @@ void aligned_free(void* ptr){
 }
 
 
-//13.10 ·ÖÅäÒ»¸ö¶şÎ¬Êı×é
+//13.10 åˆ†é…ä¸€ä¸ªäºŒç»´æ•°ç»„
 
 
 int** my2DAlloc(int rows,int columns){
@@ -1262,7 +1262,7 @@ int** my2DAlloc_2(int rows,int columns){
 }
 
 
-//17.1 ²»ÓÃÁÙÊ±±äÁ¿½»»»Á½¸öÊı
+//17.1 ä¸ç”¨ä¸´æ—¶å˜é‡äº¤æ¢ä¸¤ä¸ªæ•°
 
 void swapWithNoTemp(int& a,int &b){
     a = a - b;
